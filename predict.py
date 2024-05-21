@@ -17,7 +17,7 @@ from processor.ImageStitcher import ImageStitcher
 from processor.ImageProcessor import ImageProcessor
 from processor.change_shape import change_shape
 from processor.down_image import MapDownloader
-from pspnet_new import PSPNet
+from models.pspnet_new import PSPNet
 from processor.regularization import BuildingFootprintRegularization
 from params import *
 
@@ -94,3 +94,4 @@ if __name__ == '__main__':
     shutil.rmtree(result+"/jieyi")
     os.remove(name+"_predict.tif")
     os.rmdir(result)
+    print("Done!")
