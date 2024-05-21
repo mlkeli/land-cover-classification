@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image
 import torch
 from torchvision import transforms
-from model import DeepLabV3
+from models.model import DeepLabV3
 # from pspnet import PSPNet
 from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader
